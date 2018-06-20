@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class Asgn3Component implements OnInit {
   solution: boolean;
 
+  dummy = 'marvellous';
+  dynamic = 'piyush';
+
   constructor() { }
 
   ngOnInit() {
@@ -18,4 +21,12 @@ export class Asgn3Component implements OnInit {
     this.solution = true;
   }
 
+  get fun() {
+    console.log('string interpolation call success')
+    return alert("user defined function called");
+  }
+
+  changeText() {
+    this.dynamic = 'khairnar';
+  }
 }

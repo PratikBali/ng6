@@ -9,10 +9,10 @@
           <strong>1.Create Angular Application which contains two components and
               display the contents of that two components after the root components.
             </strong>
-              <p>Expected output of our application should be
-                Inside Root component
-                Inside First Component
-                Inside Second component
+              <p>Expected output of our application should be <br>
+                Inside Root component <br>
+                Inside First Component <br>
+                Inside Second component <br>
                 Create new components using ng generate command and add its markups in app.component.html file.
               </p>
 
@@ -54,6 +54,27 @@
     </div>
 
     <div *ngIf="solution">
+
+      <br> Q1 <br> <b>Sub component</b> <br>
+      <app-root></app-root>
+      <app-first></app-first>
+      <app-second></app-second>
+
+      <br> <br> Q2 <br> <b>colored Sub component</b> <br>
+      <app-third></app-third>
+      <app-fourth></app-fourth>
+
+      <br> <br> Q3 <br> <b>User defined function from string interpolation</b> <br>
+      <!-- {{Asgn3Component.fun()}} -->
+
+      <br> <br> Q4 <br> <b> string interpolation</b> <br>
+      Dummy Text : {{dummy}} <br>
+      length : {{dummy.length}} <br>
+      upperCase : {{dummy | uppercase}}
+
+      <br> <br> Q5 <br> <b>change text</b> <br>
+      <h3>{{dynamic}}</h3> <br>
+      <button class="btn btn-outline-info" (click)="changeText()"> click to change text</button>
 
     </div>
     <br><br>
