@@ -1,0 +1,72 @@
+<br>
+<div class="container">
+  <div class="row card" >
+
+    <div *ngIf="!solution">
+     <div class="text-center">
+        <h3>Assignment 1</h3>
+     </div><br>
+
+      <div class="container">
+
+          <p>
+              <strong>1. Create basic angular application without editing anything and try
+                to understand project structure.</strong><br>
+              Create simple angular project using below command as ng new FirstApp
+              It will create one folder named as FirstApp Open that project in Visual Studio Code Invoke command to start server as
+              ng serve
+              Now try to run our application using chrome browser as
+              http://localhost:4200
+              After execution it will display default angular application.
+              Now find out the meaning of files used in this project that we discussed in previous sessions.
+          </p>
+
+          <p>
+            <strong>2. Create Angular application which will display “Marvellous Infosystems"
+              as header.</strong><br>
+            Follow all the above steps to create new project and update index.html file
+            to display desired string.
+          </p>
+
+          <p>
+            <strong>3. Create Angular application which will Display “Marvellous Infosystems” by updating
+            app component.</strong><br>
+            App component is our root component and change the existing name
+            characteristics of app.component.ts file and change it to the “Marvellous Infosystems”
+          </p>
+
+          <p>
+            <strong>4. Create Angular application which will Display Header as “Marvellous Infosystems”
+            and subheader as “Educating for better tomorrow”.</strong><br>
+            For this you have to update app.component.html file and headers as h1 and h2.
+          </p>
+
+          <p>
+            <strong>5. Rewrite above application and use inline html contents.</strong><br>
+              For that purpose we have to update the decorator (@Component) in app.component.ts file.
+              Remove templateUrl and add template.
+              After that add our contents from html file after that template name in (` `).
+          </p>
+
+      </div>
+
+      <div class="container text-center">
+        <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
+      </div>
+      <br><br>
+    </div>
+
+    <div *ngIf="solution">
+      <div class="text-center">
+        <br>
+        <h3>
+            To view the solutions for this Assignment please refer Home page
+        </h3>
+      </div>
+      <div class="container text-center">
+          <button class="btn btn-outline-success" (click)="onHome()">  Go to Home</button>
+      </div>
+        <br><br>
+    </div>
+  </div>
+</div>

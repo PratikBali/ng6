@@ -12,4 +12,8 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  call() {
+    alert("Please call +91-7588 94 5488 For more details");
+  }
+
 }

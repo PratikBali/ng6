@@ -1,0 +1,69 @@
+<br>
+<div class="container card">
+    <div class="text-center">
+        <h3>Web Development : Angular Assignment - 2</h3>
+    </div><br><br>
+
+    <div *ngIf="!solution">
+      <div class="container">
+          <strong>
+              1. Create application which will display one textfield and one static text “Marvellous Infosystems” on page.
+          </strong>
+          <p>
+            Follow all the steps to create new project and update app.component.html file. In this file add  code to display one static text and one text field.
+          </p>
+
+          <strong>
+            2. Create application which will display one textfield and one static text “Marvellous Infosystems” on page.
+          </strong>
+          <p>
+            Colour of that textfield should be blue.
+            Follow same steps as above application.
+            As we want to specify colour add the specification in app.component.css file and see the changes.
+          </p>
+
+          <strong>
+            3. Create same angular application as above but instead of using app.component.html and app.component.css file separately add its contents in inline format inside app.component.ts file.
+          </strong>
+          <p>
+            Same as the inline html we have to use the inline css contents in app.component.ts file.
+          </p>
+
+          <strong>
+            4. Create angular application which add new component inside root component which will display “Inside Sub Component”.
+          </strong>
+          <p>
+            We have to create the normal angular project. As we want to add new component we can use below command as</p>
+            <div class="col-md-8" style="color:black; background:rgb(173, 173, 173);">
+              ng generate component Marvellous
+            </div>
+            <p>
+            After this command new folder gets created as Marvellous under app folder. which contains multiple files as .html, .css, .ts. Now we can add desired text in .html file.
+            As we want to add this component in our root component use its markup as</p>
+            <div class="col-md-8" style="color:black; background:rgb(187, 186, 186);">
+                {{marvellous}}
+            </div><br>
+
+          <strong>
+          5. Create angular application which will demonstrate the concept of string interpolation.
+          </strong>
+          <p>
+          To demonstrate the string interpolation we can create one characteristics in class as “Name” which should be assigned to some string as
+          Name = “Marvellous”
+          Now use this characteristics in html file using the concept of string interpolation as {{Name}}
+          </p>
+      </div><br>
+
+      <div class="container text-center">
+          <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
+      </div>
+    </div>
+
+    <div *ngIf="solution">
+
+      Marvellous Infosystem
+      <input type=text>
+
+    </div>
+  <br><br>
+</div>

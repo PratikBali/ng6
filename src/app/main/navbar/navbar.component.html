@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -13,11 +13,32 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Features</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+
+      <li ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
+              <span> <i class="fa fa-th-list" aria-hidden="true"></i><span> Assignments</span></span>
+          </a>
+          <ul class="dropdown-menu" ngbDropdownMenu>
+
+              <li>
+                  <a class="dropdown-item" routerLink="asgn1" routerLinkActive="active" (click)="collapseNavbar()">
+                      <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                      <span>Assignment 1</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="dropdown-item" routerLink="asgn2" routerLinkActive="active" (click)="collapseNavbar()">
+                      <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                      <span>Assignment 2</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="dropdown-item" routerLink="asgn3" routerLinkActive="active" (click)="collapseNavbar()">
+                      <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                      <span>Assignment 3</span>
+                  </a>
+              </li>
+          </ul>
       </li>
     </ul>
     <form class="form-inline">

@@ -1,26 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './main/navbar/navbar.component';
 import { FooterComponent } from './main/footer/footer.component';
 import { HomeModule } from './home/home.module';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './home/header/header.component';
-import { BannerComponent } from './home/banner/banner.component';
+import { WebappModule } from './webapp/webapp.module';
+import { WebappRoutingModule } from './webapp/webapp-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
-    HomeComponent,
-    HeaderComponent,
-    // BannerComponent
+    FooterComponent
     ],
   imports: [
     BrowserModule,
-    HomeModule
+    HomeModule,
+    WebappModule,
+    WebappRoutingModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
