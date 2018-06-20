@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./asgn3.component.css']
 })
 export class Asgn3Component implements OnInit {
+  solution: boolean;
 
   constructor() { }
 
@@ -14,6 +15,7 @@ export class Asgn3Component implements OnInit {
 
   onSolution() {
     console.log("Success");
+    this.solution = true;
   }
 
 }

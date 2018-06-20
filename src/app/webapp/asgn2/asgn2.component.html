@@ -60,9 +60,23 @@
     </div>
 
     <div *ngIf="solution">
-
+      <br> Q1  <br> <b>static text</b> <br>
       Marvellous Infosystem
-      <input type=text>
+      <input type=text placeholder="Disabled Text Field" disabled>
+
+       <br> <br>  Q2 <br> <b>blue input</b> <br>
+      Marvellous Infosystem
+      <input type=text style="color:blue"> <a style="color:blue;">blue text field</a>
+
+      <br> <br>  Q3 <br> <b>inline</b> <br>
+      <app-inline></app-inline>
+
+      <br> <br>  Q4 <br> <b>sub-component</b> <br>
+      <app-sub></app-sub>
+
+      Q5 <br> <b>String interpolation</b> <br>
+      <input type="text" name="demo" [(ngModel)]="name">
+      <p>Value: {{ name }}</p>
 
     </div>
   <br><br>

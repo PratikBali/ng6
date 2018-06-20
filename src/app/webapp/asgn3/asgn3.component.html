@@ -4,51 +4,57 @@
         <h3>Web Development : Angular Assignment - 3</h3>
     </div><br><br>
 
-    <div class="container">
-        <strong>1.Create Angular Application which contains two components and
-            display the contents of that two components after the root components.
-          </strong>
-            <p>Expected output of our application should be
-              Inside Root component
-              Inside First Component
-              Inside Second component
-              Create new components using ng generate command and add its markups in app.component.html file.
+    <div *ngIf="!solution">
+      <div class="container">
+          <strong>1.Create Angular Application which contains two components and
+              display the contents of that two components after the root components.
+            </strong>
+              <p>Expected output of our application should be
+                Inside Root component
+                Inside First Component
+                Inside Second component
+                Create new components using ng generate command and add its markups in app.component.html file.
+              </p>
+
+            <strong>2. Create the application which contains two components as First and
+              second Display specific text from both the component.
+            </strong>
+              <p>Text of first component should be displayed in Red colour and for second component use Blue colour.
+                Follow same steps as the above application. As we want to specify the colours we have to write the
+                colours specification in appropriate .css file of each component.
+              </p>
+
+            <strong>3. Create angular application which contains one user defined function inside class.
+              We have to call that function using String interpolation.
+            </strong>
+            <p>
+              Write one public function inside class named as fun() and call that function inside {{ call }}.
             </p>
 
-          <strong>2. Create the application which contains two components as First and
-            second Display specific text from both the component.
-          </strong>
-            <p>Text of first component should be displayed in Red colour and for second component use Blue colour.
-              Follow same steps as the above application. As we want to specify the colours we have to write the
-              colours specification in appropriate .css file of each component.
+            <strong>4. Create application which display length of the string which is characteristics of the class
+              as well as we have to convert that string into upper case.
+            </strong>
+            <p>
+            To solve this question we can use length property and ToUpperCase() function
+            inside sting interpolation.
             </p>
 
-          <strong>3. Create angular application which contains one user defined function inside class.
-            We have to call that function using String interpolation.
-          </strong>
-          <p>
-            Write one public function inside class named as fun() and call that function inside {{ call }}.
-          </p>
+            <strong>5. Create angular application which one button. When user press that button we have to
+              display some text as “Button Clicked” otherwise display “Marvellous Infosystems”.
+            </strong>
+            <p>
+            As we want to handle event of button click we have to use this tag as (click)= “fun()”.
+            In this case inside the fun function we will change the text.
+            </p>
+      </div><br>
 
-          <strong>4. Create application which display length of the string which is characteristics of the class
-            as well as we have to convert that string into upper case.
-          </strong>
-          <p>
-          To solve this question we can use length property and ToUpperCase() function
-          inside sting interpolation.
-          </p>
+      <div class="container text-center">
+          <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
+      </div>
+    </div>
 
-          <strong>5. Create angular application which one button. When user press that button we have to
-            display some text as “Button Clicked” otherwise display “Marvellous Infosystems”.
-          </strong>
-          <p>
-          As we want to handle event of button click we have to use this tag as (click)= “fun()”.
-          In this case inside the fun function we will change the text.
-          </p>
-    </div><br>
+    <div *ngIf="solution">
 
-    <div class="container text-center">
-        <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
     </div>
     <br><br>
 

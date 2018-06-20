@@ -8,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class Asgn2Component implements OnInit {
 
   marvellous = "<Marvellous-Component></Marvellous-Component>";
+  solution: boolean;
+  name: string = 'Marvellous';
+
   constructor() { }
 
   ngOnInit() {
   }
 
   onSolution() {
-    console.log("Success");
+    console.log("Button Clicked");
+    this.solution = true;
   }
 
 }
