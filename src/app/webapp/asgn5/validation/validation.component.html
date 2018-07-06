@@ -1,0 +1,36 @@
+<form class="was-validated">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input required ngModel name="StudName" #name="ngModel"
+                id="StudName"  type="text" class="form-control is-valid"
+                minLength="5" >
+                <!-- <div class="alert alert-danger" *ngIf="!name.valid">Name is Compulsory</div> -->
+                <div class="invalid-feedback">
+                    Please provide Minimum 5 characters
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="name">College Name</label>
+                  <input required ngModel name="college" #name="ngModel"
+                  id="StudName"  type="text" class="form-control"
+                   maxLength="7">
+                  <!-- <div class="alert alert-danger" *ngIf="!name.valid">College is Compulsory</div> -->
+                  <div class="invalid-feedback">
+                      Please provide a valid college. You cant enter more than 7  characters
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit form</button>
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+

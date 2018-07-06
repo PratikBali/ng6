@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row">
+    <div class="justify-content-center">
+
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+
+          <input [(ngModel)]="data.name" name="name"
+          type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Address</label>
+
+          <textarea [(ngModel)]="data.address" name="address"
+          class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Gender</label>
+
+          <select [(ngModel)]="data.gender" name="gender"
+          class="form-control" id="exampleFormControlSelect1">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+
+          <input [(ngModel)]="data.mobile" name="mobile"
+          type="text" class="form-control" id="mobile" aria-describedby="mobile" placeholder="Enter Mobile number">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+
+          <input [(ngModel)]="data.email" name="email"
+          type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">College Name</label>
+
+          <input [(ngModel)]="data.college" name="college"
+          type="text" class="form-control" id="mobile" aria-describedby="mobile" placeholder="Enter Mobile number">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Batch</label>
+
+          <select [(ngModel)]="data.batch" name="batch"
+          class="form-control" id="exampleFormControlSelect1">
+            <option>PPA</option>
+            <option>LB</option>
+            <option>Project</option>
+            <option>MultiOS</option>
+            <option>Unix</option>
+            <option>Win32SDK</option>
+            <option>Angular</option>
+            <option>Mean Stack</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+
+          <input [(ngModel)]="data.password" name="password"
+          type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Accept</label>
+        </div>
+
+        <button (click)="save()" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</div>

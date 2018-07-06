@@ -28,6 +28,9 @@ import { RoutingComponent } from './asgn4/routing/routing.component';
 import { OperatingSystemComponent } from './asgn4/routing/operating-system/operating-system.component';
 import { ProgrammingLanguageComponent } from './asgn4/routing/programming-language/programming-language.component';
 import { DatabasesComponent } from './asgn4/routing/databases/databases.component';
+import { FormComponent } from './asgn5/form/form.component';
+import { TemplateComponent } from './asgn5/template/template.component';
+import { ValidationComponent } from './asgn5/validation/validation.component';
 
 @NgModule({
   imports: [
@@ -39,7 +42,7 @@ import { DatabasesComponent } from './asgn4/routing/databases/databases.componen
                   InlineComponent, SubComponent, RootComponent,
                   FirstComponent, SecondComponent, ThirdComponent, FourthComponent,
                   Asgn4Component, Asgn5Component, ChildComponent, HttpComponent, ServiceComponent,
-                  SubComponent1, SubComponent2, SubComponent3, RoutingComponent, OperatingSystemComponent, ProgrammingLanguageComponent, DatabasesComponent],
+                  SubComponent1, SubComponent2, SubComponent3, RoutingComponent, OperatingSystemComponent, ProgrammingLanguageComponent, DatabasesComponent, FormComponent, TemplateComponent, ValidationComponent],
   exports: [RouterModule]
 })
 export class WebappModule { }
