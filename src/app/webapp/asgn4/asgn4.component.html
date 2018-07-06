@@ -1,0 +1,77 @@
+<br>
+<div class="container card">
+    <div class="text-center">
+        <h3>Web Development : Angular Assignment - 4</h3>
+    </div><br><br>
+
+    <div *ngIf="!solution">
+      <div class="container">
+          <strong>1.Create Angular Application which contains two components as parent and child component. Send data from parent to child and child to parent.
+            </strong>
+              <p>create application with one child component. Parent component sends data to child component at the time of creation and child component can send data to parent using the concept of event.
+              </p>
+<hr>
+            <strong>2. Create the angular application which contains one component. that component contains one button. Our application access JSON file which is stored on server side. That JSON file contains information of students. After button press we have to fetch data from JSON file and display on web page.
+            </strong>
+              <p>We have to create .JSON file and store that file into asset folder. On button click event we have to fetch data from that file. To solve this question please refer HttpDataFetch application.
+
+              </p>
+<hr>
+            <strong>3. Create angular application which contains one service which provides information of books (Name,Price,Author,No of pages). create three components and perform below operations
+
+           <br>
+             <div class="container">
+                1. SubComponent1 - Display all details of books <br>
+              2. SubComponent2 - Display only names of books <br>
+              3. Subcomponent3 - Display name and price of books <br>
+             </div>
+            </strong>
+            <p>
+                Create array of books information in service and write one function which returns this
+                array. From each separate component display specific information.
+
+            </p>
+<hr>
+            <strong>4. Create angular application which contains three routing navigations as Operating Systems, Programming Languages, Databases. <br>
+
+            Display specific information when user click any option as <br>
+
+            <div class="container">
+                1. Operating systems : Display names of operating systems <br>
+                2. Programming languages : Display names of languages <br>
+                3. Databases : Display names of databases <br>
+            </div>
+            </strong>
+            <p>
+
+              create application with —routing option. Create three components to display specific informations. Add names of that components in routes array.
+            </p>
+
+
+      </div><br>
+
+      <div class="container text-center">
+          <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
+      </div>
+    </div>
+
+    <div *ngIf="solution">
+      <strong>Q1.</strong> <br>
+      <app-child [parentData]="message"  (EventObj)="childData= $event"></app-child>
+      {{childData}} <br>
+<hr>
+      <strong>Q2.</strong> <br>
+      <strong> Marvellous Batch Details</strong>
+      <app-http></app-http> <br>
+<hr>
+      <strong>Q3.</strong> <br>
+      <strong>Data From Service</strong>
+      <app-service></app-service>
+<hr>
+      <strong>Q4.</strong> <br>
+      <strong>Data From Routing</strong>
+      <app-routing></app-routing>
+    </div>
+    <br><br>
+
+</div>

@@ -1,0 +1,21 @@
+<br>
+ <button class="btn btn-outline-primary btn-sm" (click)="getData()">Get Data</button>
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Batch Name</th>
+      <th scope="col">Fee</th>
+      <th scope="col">Duration in Months</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let value of batches">
+      <td>{{value.Name }}</td>
+      <td>{{value.Fees }}</td>
+      <td>{{value.Duration }}</td>
+    </tr>
+
+  </tbody>
+</table>
+<!-- {{batches | json}} -->

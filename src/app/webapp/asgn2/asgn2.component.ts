@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Asgn2Component implements OnInit {
 
-  marvellous = "<Marvellous-Component></Marvellous-Component>";
+  marvellous = '<Marvellous-Component></Marvellous-Component>';
   solution: boolean;
-  name: string = 'Marvellous';
+  name = 'Marvellous';
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class Asgn2Component implements OnInit {
   }
 
   onSolution() {
-    console.log("Button Clicked");
+    console.log('Button Clicked');
     this.solution = true;
   }
 

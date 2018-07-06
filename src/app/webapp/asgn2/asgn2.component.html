@@ -12,7 +12,7 @@
           <p>
             Follow all the steps to create new project and update app.component.html file. In this file add  code to display one static text and one text field.
           </p>
-
+<hr>
           <strong>
             2. Create application which will display one textfield and one static text “Marvellous Infosystems” on page.
           </strong>
@@ -21,6 +21,7 @@
             Follow same steps as above application.
             As we want to specify colour add the specification in app.component.css file and see the changes.
           </p>
+          <hr>
 
           <strong>
             3. Create same angular application as above but instead of using app.component.html and app.component.css file separately add its contents in inline format inside app.component.ts file.
@@ -28,6 +29,7 @@
           <p>
             Same as the inline html we have to use the inline css contents in app.component.ts file.
           </p>
+          <hr>
 
           <strong>
             4. Create angular application which add new component inside root component which will display “Inside Sub Component”.
@@ -43,6 +45,7 @@
             <div class="col-md-8" style="color:black; background:rgb(187, 186, 186);">
                 {{marvellous}}
             </div><br>
+            <hr>
 
           <strong>
           5. Create angular application which will demonstrate the concept of string interpolation.
@@ -53,6 +56,7 @@
           Now use this characteristics in html file using the concept of string interpolation as {{Name}}
           </p>
       </div><br>
+      <hr>
 
       <div class="container text-center">
           <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
@@ -63,21 +67,21 @@
       <br> Q1  <br> <b>static text</b> <br>
       Marvellous Infosystem
       <input type=text placeholder="Disabled Text Field" disabled>
-
+<hr>
        <br> <br>  Q2 <br> <b>blue input</b> <br>
       Marvellous Infosystem
       <input type=text style="color:blue"> <a style="color:blue;">blue text field</a>
-
+<hr>
       <br> <br>  Q3 <br> <b>inline</b> <br>
       <app-inline></app-inline>
-
+<hr>
       <br> <br>  Q4 <br> <b>sub-component</b> <br>
       <app-sub></app-sub>
-
+<hr>
       Q5 <br> <b>String interpolation</b> <br>
       <input type="text" name="demo" [(ngModel)]="name">
       <p>Value: {{ name }}</p>
-
+<hr>
     </div>
   <br><br>
 </div>

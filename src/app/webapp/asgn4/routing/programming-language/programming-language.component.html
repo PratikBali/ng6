@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Programming Language</th>
+                <th scope="col">Responsible</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let value of languages">
+                <th>{{value.id}}</th>
+                <td>{{value.name}}</td>
+                <td>{{value.res}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</div>

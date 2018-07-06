@@ -1,0 +1,10 @@
+[
+    {"Name":"PPA", "Fees":9000, "Duration":6},
+    {"Name":"LB", "Fees":7000, "Duration":4},
+    {"Name":"PROJECT", "Fees":5000, "Duration":2},
+    {"Name":"MultiOS", "Fees":6000, "Duration":6},
+    {"Name":"Win32SDK", "Fees":3000, "Duration":4},
+    {"Name":"UNIX", "Fees":4000, "Duration":4},
+    {"Name":"Angular", "Fees":5000, "Duration":2},
+    {"Name":"MeanStack", "Fees":5000, "Duration":4}
+]

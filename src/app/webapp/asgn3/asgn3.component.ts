@@ -9,7 +9,11 @@ export class Asgn3Component implements OnInit {
   solution: boolean;
 
   dummy = 'marvellous';
-  dynamic = 'piyush';
+  dynamicBool = false;
+  dynamic = 'Marvellous';
+  show = false;
+  i = 0;
+  staticAlertClosed = false;
 
   constructor() { }
 
@@ -17,16 +21,26 @@ export class Asgn3Component implements OnInit {
   }
 
   onSolution() {
-    console.log("Success");
+    console.log('Success');
     this.solution = true;
   }
 
-  get fun() {
-    console.log('string interpolation call success')
-    return alert("user defined function called");
+  fun() {
+    setTimeout(() => this.staticAlertClosed = true, 10000);
+    this.show = true;
+    this.i = this.i + 1;
+    console.log(this.i);
+     console.log('string interpolation call success');
+    // return alert("user defined function called");
   }
 
   changeText() {
-    this.dynamic = 'khairnar';
+    if (this.dynamicBool === false) {
+      this.dynamic = 'Marvellous Infosystems';
+      this.dynamicBool = true;
+    } else {
+      this.dynamic = 'Mr. Piyush Khairnar';
+      this.dynamicBool = false;
+    }
   }
 }

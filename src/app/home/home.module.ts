@@ -20,7 +20,7 @@ import { HOME_ROUTE } from './home.route';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [RouterModule]
 })
-export class HomeModule implements OnInit{
+export class HomeModule implements OnInit {
   ngOnInit() {
     console.log('home module start');
   }

@@ -1,0 +1,23 @@
+<p>
+  Data From SubComponent1 <br>
+  <button class="btn btn-outline-success btn-sm" (click)="GetData()">Get Data</button>
+</p>
+<div class="container">
+  <div class="row">
+    <div >
+      <table class="table table-hover table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Book Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let value of bookName">
+            <td>{{value.Name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
