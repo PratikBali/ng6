@@ -1,0 +1,191 @@
+<br>
+<div class="container card ">
+    <div class="text-center">
+        <h3>Web Development : Angular Assignment - 7</h3>
+    </div><br><br>
+
+    <div *ngIf="!solution">
+      <div class="container">
+
+          <strong>
+              1.Create angular application which creates login form which accepts Username and Password from user. When user clicks submit button username and password should be stored in typescripts class characteristics.
+          </strong>
+          <p>
+              Use appropriate form components using angular Material Designing.
+          </p>
+          <hr>
+
+          <strong>
+              2. Create angular application which creates one form for the travelling portal. In that portal we have to display names of cities as a list and user will select any specific city.
+            </strong>
+          <p>
+              We have to accept start date and end date of vacation from user with its necessary details.
+              Use appropriate form components using angular Material Designing.
+
+            </p>
+          <hr>
+
+          <strong>
+              3. Create angular application which contains one form which accept car details (Name, type, color ,Car number, number of seats) from user.
+
+            </strong>
+          <p>
+              Provide submit button at the end. Car number is compulsory filed in our form. Use appropriate form components using angular Material Designing.
+
+            </p>
+          <hr>
+
+          <strong>
+              4. Create angular application which displays one table which contains names of five books with its author name, number of pages in it and its price.
+
+            </strong>
+          <p>
+              Use appropriate form components using angular Material Designing.
+            </p>
+          <hr>
+
+      </div><br>
+
+      <div class="container text-center">
+          <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
+      </div>
+    </div>
+
+    <div *ngIf="solution">
+
+      <div class="accordion" id="accordionExample">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Question #1
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+
+                ans1
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Question #2
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+
+                ans2
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Question #3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+
+                  ans3
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Question #4
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+
+                    ans4
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+        </div>
+
+    </div>
+    <br><br>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="custom-accordion">
+    <div class="item">
+      <div class="icon">1</div>
+      <div class="title">
+        <div class="text">Lorem ipsum</div>
+      </div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
+    </div>
+    <div class="item">
+      <div class="icon">2</div>
+      <div class="title">
+        <div class="text">Ipsam hic quia</div>
+      </div>
+      <div class="content">Porro explicabo ad molestiae incidunt, corporis doloribus, numquam assumenda molestias deserunt provident veritatis</div>
+    </div>
+    <div class="item">
+      <div class="icon">3</div>
+      <div class="title">
+        <div class="text">In impedit</div>
+      </div>
+      <div class="content">Repudiandae non ea nam sint accusamus provident aut nobis excepturi, possimus animi corrupti debitis porro</div>
+    </div>
+    <div class="item">
+      <div class="icon">4</div>
+      <div class="title">
+        <div class="text">Consequatur</div>
+      </div>
+      <div class="content">Cum repellendus, aspernatur error eos autem porro asperiores praesentium quae odit est fugiat suscipit commodi architecto doloribus</div>
+    </div>
+    <div class="item">
+      <div class="icon">5</div>
+      <div class="title">
+        <div class="text">Reiciendis</div>
+      </div>
+      <div class="content">Laudantium vero ab atque natus et similique? Perferendis unde a voluptates voluptas tempora quaerat</div>
+    </div>
+    <div class="item">
+      <div class="icon">6</div>
+      <div class="title">
+        <div class="text">Iure blanditiis</div>
+      </div>
+      <div class="content">Officiis ipsa suscipit, quidem odio, ratione sapiente consectetur nemo voluptatum maxime</div>
+    </div>
+    <div class="item">
+      <div class="icon">7</div>
+      <div class="title">Nemo pariatur</div>
+      <div class="content">
+        <div class="heart-icon">&hearts;</div>
+      </div>
+    </div>
+  </div> -->

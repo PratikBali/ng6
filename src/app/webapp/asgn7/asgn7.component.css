@@ -1,0 +1,168 @@
+/* @import url('https://fonts.googleapis.com/css?family=Sunflower:300,500,700');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.5;
+}
+body {
+  background: #1c1c1c;
+}
+.custom-accordion {
+  background: #8A6552;
+  color: #FFFFFF;
+  font-family: 'Sunflower', sans-serif;
+  padding-bottom: 2rem;
+}
+.custom-accordion > .item {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+.custom-accordion > .item:last-of-type {
+  background: #462521;
+  text-align: center;
+  border-radius: .5rem;
+}
+.custom-accordion > .item:last-of-type > .icon {
+  color: #FFFFFF;
+}
+.custom-accordion > .item:nth-of-type(6) {
+  padding-bottom: 2rem;
+}
+.custom-accordion > .item > .icon {
+  color: #462521;
+  font-size: 2rem;
+}
+.custom-accordion > .item > .title {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 800px) and (min-height: 270px) {
+  .custom-accordion {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 1000px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .custom-accordion > .item {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item:hover:not(:last-of-type) {
+    -webkit-transform: scaleX(2) translateX(-1px);
+            transform: scaleX(2) translateX(-1px);
+    box-shadow: 0 0 3rem #301916;
+    background: #8A6552;
+    border-color: transparent;
+  }
+  .custom-accordion > .item:hover + .item {
+    opacity: .1;
+  }
+  .custom-accordion > .item:hover + .item:last-of-type {
+    opacity: .1;
+    background: #8A6552;
+  }
+  .custom-accordion > .item:not(:last-of-type) {
+    border-right: 1px solid #462521;
+  }
+  .custom-accordion > .item:last-of-type {
+    background: #462521;
+    width: 25%;
+    border-radius: 0;
+  }
+  .custom-accordion > .item:last-of-type .heart-icon {
+    font-size: 6rem;
+  }
+  .custom-accordion > .item:hover:last-of-type .heart-icon {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .custom-accordion > .item:last-of-type > .title {
+    -webkit-transform: rotate(0) translateX(-50%) translateY(-2.5rem);
+            transform: rotate(0) translateX(-50%) translateY(-2.5rem);
+    padding: 0;
+    text-align: center;
+  }
+  .custom-accordion > .item:last-of-type > .content {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+  .custom-accordion > .item:hover:not(:last-of-type) > .icon {
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  .custom-accordion > .item:hover:not(:last-of-type) > .title {
+    -webkit-transform: scaleX(0.5) translateX(-50%);
+            transform: scaleX(0.5) translateX(-50%);
+    background: #CA2E55;
+    text-align: center;
+    padding: 0;
+  }
+  .custom-accordion > .item:hover:not(:last-of-type) > .title > .text {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+  }
+  .custom-accordion > .item:hover:not(:last-of-type) > .content {
+    opacity: 1;
+  }
+  .custom-accordion > .item > .icon {
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    color: #FFFFFF;
+  }
+  .custom-accordion > .item > .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1.5rem;
+    width: 200%;
+    text-align: left;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    font-size: 1.2rem;
+  }
+  .custom-accordion > .item > .title > .text {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item > .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%) scaleX(0.5);
+            transform: translateX(-50%) translateY(-50%) scaleX(0.5);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    opacity: 0;
+    padding: 1rem;
+    pointer-events: none;
+  }
+}
+.heart-icon {
+  color: #CA2E55;
+  font-size: 3rem;
+  transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+}
+ */

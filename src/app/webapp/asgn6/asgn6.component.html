@@ -1,0 +1,81 @@
+<br>
+<div class="container card ">
+    <div class="text-center">
+        <h3>Web Development : Angular Assignment - 6</h3>
+    </div><br><br>
+
+    <div *ngIf="!solution">
+      <div class="container">
+
+          <strong>
+            1.Create angular application which creates two custom directives as Comp-Success and Comp-Failure.
+          </strong>
+          <p>
+            In case of Comp-Success directive when we move the mouse cursor over the data element its text colour becomes green and in case of Comp-Failure text colour becomes red.
+                When we remove mouse courser its colour becomes black. We have to use that both directives in one .html file.
+          </p>
+          <hr>
+
+          <strong>
+            2. Create angular application which creates one custom directive named as Custom- Style.
+          </strong>
+          <p>
+              In this directive we have to set background of our text as yellow and type of the text should be bold.
+              Use that custom directive in .html file.
+              In this application there is no need to handle mouse listeners.
+          </p>
+          <hr>
+
+      </div><br>
+
+      <div class="container text-center">
+          <button class="btn btn-outline-success" (click)="onSolution()">  View Solutions</button>
+      </div>
+    </div>
+
+    <div *ngIf="solution">
+
+      <div class="accordion" id="accordionExample">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Question #1
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body col-md-4">
+
+                <h3 appCompSuccess> Marvellous <a class="text-white "> Success </a> </h3>
+                <h3 appCompFailure> Seed <a class="text-white "> Failure </a> </h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Question #2
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body col-md-4">
+
+                  <h3 appCustomStyle> Marvellous </h3>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+    </div>
+    <br><br>
+</div>

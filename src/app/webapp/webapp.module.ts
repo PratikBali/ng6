@@ -31,6 +31,11 @@ import { DatabasesComponent } from './asgn4/routing/databases/databases.componen
 import { FormComponent } from './asgn5/form/form.component';
 import { TemplateComponent } from './asgn5/template/template.component';
 import { ValidationComponent } from './asgn5/validation/validation.component';
+import { Asgn6Component } from './asgn6/asgn6.component';
+import { Asgn7Component } from './asgn7/asgn7.component';
+import { CompSuccessDirective } from './asgn6/comp-success.directive';
+import { CompFailureDirective } from './asgn6/comp-failure.directive';
+import { CustomStyleDirective } from './asgn6/custom-style.directive';
 
 @NgModule({
   imports: [
@@ -38,11 +43,16 @@ import { ValidationComponent } from './asgn5/validation/validation.component';
   ],
   providers: [BatchService, BookService],
   // tslint:disable-next-line:max-line-length
-  declarations: [Asgn1Component, Asgn2Component, Asgn3Component,
-                  InlineComponent, SubComponent, RootComponent,
-                  FirstComponent, SecondComponent, ThirdComponent, FourthComponent,
-                  Asgn4Component, Asgn5Component, ChildComponent, HttpComponent, ServiceComponent,
-                  SubComponent1, SubComponent2, SubComponent3, RoutingComponent, OperatingSystemComponent, ProgrammingLanguageComponent, DatabasesComponent, FormComponent, TemplateComponent, ValidationComponent],
+  declarations: [Asgn1Component, Asgn2Component, Asgn3Component, InlineComponent, SubComponent,
+                  RootComponent, FirstComponent, SecondComponent, ThirdComponent, FourthComponent,
+                  Asgn4Component, ChildComponent, HttpComponent, ServiceComponent,
+                  Asgn5Component, SubComponent1, SubComponent2, SubComponent3, RoutingComponent, OperatingSystemComponent, ProgrammingLanguageComponent, DatabasesComponent, FormComponent, TemplateComponent, ValidationComponent,
+                  Asgn6Component,
+                  Asgn7Component,
+                  CompSuccessDirective,
+                  CompFailureDirective,
+                  CustomStyleDirective
+                ],
   exports: [RouterModule]
 })
 export class WebappModule { }

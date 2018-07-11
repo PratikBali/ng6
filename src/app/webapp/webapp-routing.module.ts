@@ -7,6 +7,9 @@ import { Asgn3Component } from './asgn3/asgn3.component';
 import { Asgn4Component } from './asgn4/asgn4.component';
 import { Asgn5Component } from './asgn5/asgn5.component';
 import { OperatingSystemComponent } from './asgn4/routing/operating-system/operating-system.component';
+import { ErrorPageComponent } from '../main/error-page/error-page.component';
+import { Asgn6Component } from './asgn6/asgn6.component';
+import { Asgn7Component } from './asgn7/asgn7.component';
 
 const MyRoute: Routes =
 [
@@ -16,11 +19,11 @@ const MyRoute: Routes =
   { path: 'asgn3' , component: Asgn3Component},
   { path: 'asgn4' , component: Asgn4Component},
   { path: 'asgn5' , component: Asgn5Component},
-  { path: 'os' , component: OperatingSystemComponent},
-
-  // { path: 'notfound' , component: PageNotFoundComponent},
-  // { path: 'error' , component: ErrorPageComponent, data: {message: 'Page Not Found!'}},
-  // { path: '**' , redirectTo: '/notfound'}
+  { path: 'asgn6' , component: Asgn6Component},
+  { path: 'asgn7' , component: Asgn7Component},
+  { path: 'notfound' , component: ErrorPageComponent},
+  { path: 'error' , component: ErrorPageComponent, data: {message: 'Page Not Found!'}},
+  { path: '**' , redirectTo: '/notfound'}
 ];
 
 @NgModule({

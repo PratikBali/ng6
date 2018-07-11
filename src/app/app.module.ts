@@ -11,13 +11,15 @@ import { WebappRoutingModule } from './webapp/webapp-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { Asgn4RoutingModule } from './webapp/asgn4/routing/asgn4-routing.module';
 import { RouterModule } from '@angular/router';
+import { ErrorPageComponent } from './main/error-page/error-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
-    ],
+    FooterComponent,
+    ErrorPageComponent
+      ],
   imports: [
     BrowserModule,
     HomeModule,
