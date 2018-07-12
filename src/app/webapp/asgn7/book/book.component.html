@@ -9,14 +9,20 @@
   <!-- Name Column -->
   <ng-container matColumnDef="author">
     <th mat-header-cell *matHeaderCellDef > &nbsp;&nbsp;&nbsp;&nbsp; Book Author </th>
-    <td mat-cell *matCellDef="let book"> &nbsp;&nbsp;&nbsp;&nbsp;{{book.author}} </td>
+    <td mat-cell *matCellDef="let book"> &nbsp;&nbsp;&nbsp;&nbsp; {{book.author}} </td>
   </ng-container>
 
   <!-- Weight Column -->
   <ng-container matColumnDef="pages">
     <th mat-header-cell *matHeaderCellDef >&nbsp;&nbsp;&nbsp;&nbsp; No. of Pages </th>
-    <td mat-cell *matCellDef="let book"> &nbsp;&nbsp;&nbsp;&nbsp;{{book.pages}} </td>
+    <td mat-cell *matCellDef="let book"> &nbsp;&nbsp;&nbsp;&nbsp; {{book.pages}} </td>
   </ng-container>
+
+    <!-- Price Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef >&nbsp;&nbsp;&nbsp;&nbsp; Price </th>
+      <td mat-cell *matCellDef="let book"> &nbsp;&nbsp;&nbsp;&nbsp; {{book.price}} </td>
+    </ng-container>
 
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
