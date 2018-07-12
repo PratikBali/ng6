@@ -1,0 +1,33 @@
+<!--
+<h3>Stroked Buttons</h3>
+<div class="button-row">
+  <button mat-stroked-button>Basic</button>
+  <button mat-stroked-button color="primary">Primary</button>
+  <button mat-stroked-button color="accent">Accent</button>
+  <button mat-stroked-button color="warn">Warn</button>
+  <button mat-stroked-button disabled>Disabled</button>
+  <a mat-stroked-button routerLink=".">Link</a>
+</div>
+ -->
+
+<form class="example-form">
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" value="" [(ngModel)]="username" name="username">
+      <mat-hint>Please enter your username</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" type="password" value="" [(ngModel)]="password" name="password">
+      <mat-hint>Please enter your Password</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <br>
+  <button mat-stroked-button color="primary" (click)="onSubmit()">Submit</button>
+
+</form>
+

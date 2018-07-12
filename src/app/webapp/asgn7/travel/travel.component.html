@@ -1,0 +1,55 @@
+<form class="example-form">
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" value="" [(ngModel)]="username" name="username">
+    </mat-form-field>
+  </div>
+
+<br>
+
+<div class="row">
+  <div class="col-md-4">
+      <mat-form-field>
+        <mat-select placeholder="Select your city">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+  <div class="col-md-5">
+    <mat-form-field class="example-full-width">
+      <mat-select placeholder="Select Desired Hotel">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+
+  <br>
+
+<div class="row">
+  <div class="col-md-4">
+    <mat-form-field class="example-full-width">
+      <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="Choose a check in date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div  class="col-md-4">
+    <mat-form-field class="example-full-width">
+      <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a check out date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+
+  <br>
+  <button mat-stroked-button color="primary" (click)="onSubmit()">Submit</button>
+
+</form>

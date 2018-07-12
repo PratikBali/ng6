@@ -13,6 +13,9 @@ import { Asgn4RoutingModule } from './webapp/asgn4/routing/asgn4-routing.module'
 import { RouterModule } from '@angular/router';
 import { ErrorPageComponent } from './main/error-page/error-page.component';
 
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+// import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,9 @@ import { ErrorPageComponent } from './main/error-page/error-page.component';
     WebappRoutingModule,
     Asgn4RoutingModule,
     HttpClientModule,    // Add the name into import
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    // BrowserAnimationsModule,
+    // MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

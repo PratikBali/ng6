@@ -37,21 +37,49 @@ import { CompSuccessDirective } from './asgn6/comp-success.directive';
 import { CompFailureDirective } from './asgn6/comp-failure.directive';
 import { CustomStyleDirective } from './asgn6/custom-style.directive';
 
+import { MaterialFormComponent } from './asgn7/material-form/material-form.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import { TravelComponent } from './asgn7/travel/travel.component'
+import { MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule} from '@angular/material';
+import { MatGridListModule} from '@angular/material/grid-list';
+import { MatSelectModule} from '@angular/material/select';
+
+import { CarComponent } from './asgn7/car/car.component';
+
+import { BookComponent } from './asgn7/book/book.component';
+import { MatTableModule} from '@angular/material/table';
+
+
 @NgModule({
   imports: [
-    CommonModule, FormsModule, NgbModule
+    CommonModule, FormsModule,
+    BrowserAnimationsModule,
+    NgbModule, MatButtonModule, MatInputModule, MatFormFieldModule, MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule, MatGridListModule, MatSelectModule,
+    MatTableModule
   ],
   providers: [BatchService, BookService],
   // tslint:disable-next-line:max-line-length
   declarations: [Asgn1Component, Asgn2Component, Asgn3Component, InlineComponent, SubComponent,
-                  RootComponent, FirstComponent, SecondComponent, ThirdComponent, FourthComponent,
-                  Asgn4Component, ChildComponent, HttpComponent, ServiceComponent,
+    RootComponent, FirstComponent, SecondComponent, ThirdComponent, FourthComponent,
+    Asgn4Component, ChildComponent, HttpComponent, ServiceComponent,
                   Asgn5Component, SubComponent1, SubComponent2, SubComponent3, RoutingComponent, OperatingSystemComponent, ProgrammingLanguageComponent, DatabasesComponent, FormComponent, TemplateComponent, ValidationComponent,
                   Asgn6Component,
                   Asgn7Component,
                   CompSuccessDirective,
                   CompFailureDirective,
-                  CustomStyleDirective
+                  CustomStyleDirective,
+                  MaterialFormComponent,
+                  TravelComponent,
+                  CarComponent,
+                  BookComponent
                 ],
   exports: [RouterModule]
 })
