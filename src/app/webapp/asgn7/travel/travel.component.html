@@ -12,8 +12,8 @@
   <div class="col-md-4">
       <mat-form-field>
         <mat-select placeholder="Select your city">
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
+          <mat-option *ngFor="let city of cities" [value]="city.value">
+            {{city.viewValue}}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -21,8 +21,8 @@
   <div class="col-md-5">
     <mat-form-field class="example-full-width">
       <mat-select placeholder="Select Desired Hotel">
-        <mat-option *ngFor="let food of foods" [value]="food.value">
-          {{food.viewValue}}
+        <mat-option *ngFor="let hotel of cities" [value]="hotel.value">
+          {{hotel.viewValue}}
         </mat-option>
       </mat-select>
     </mat-form-field>

@@ -1,10 +1,11 @@
-import { BookService } from './asgn4/service/book.service';
-import { BatchService } from './asgn4/batch.service';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+import { BookService } from './asgn4/service/book.service';
+import { BatchService } from './asgn4/batch.service';
 
 import { Asgn1Component } from './asgn1/asgn1.component';
 import { Asgn2Component } from './asgn2/asgn2.component';
@@ -55,12 +56,10 @@ import { CarComponent } from './asgn7/car/car.component';
 import { BookComponent } from './asgn7/book/book.component';
 import { MatTableModule} from '@angular/material/table';
 
-
 @NgModule({
   imports: [
-    CommonModule, FormsModule,
-    BrowserAnimationsModule,
-    NgbModule, MatButtonModule, MatInputModule, MatFormFieldModule, MatIconModule,
+    CommonModule, FormsModule, BrowserAnimationsModule, NgbModule,
+    MatButtonModule, MatInputModule, MatFormFieldModule, MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule, MatGridListModule, MatSelectModule,
     MatTableModule

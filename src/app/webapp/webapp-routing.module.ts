@@ -10,10 +10,12 @@ import { OperatingSystemComponent } from './asgn4/routing/operating-system/opera
 import { ErrorPageComponent } from '../main/error-page/error-page.component';
 import { Asgn6Component } from './asgn6/asgn6.component';
 import { Asgn7Component } from './asgn7/asgn7.component';
+import { FirebaseComponent } from '../angular/firebase/firebase.component';
 
 const MyRoute: Routes =
 [
   { path: '' , component: HomeComponent },
+  // { path: 'firebase' , component: FirebaseComponent },
   { path: 'asgn1' , component: Asgn1Component},
   { path: 'asgn2' , component: Asgn2Component},
   { path: 'asgn3' , component: Asgn3Component},
@@ -21,6 +23,7 @@ const MyRoute: Routes =
   { path: 'asgn5' , component: Asgn5Component},
   { path: 'asgn6' , component: Asgn6Component},
   { path: 'asgn7' , component: Asgn7Component},
+  { path: '',   redirectTo: '/a', pathMatch: 'full' },
   { path: 'notfound' , component: ErrorPageComponent},
   { path: 'error' , component: ErrorPageComponent, data: {message: 'Page Not Found!'}},
   { path: '**' , redirectTo: '/notfound'}
